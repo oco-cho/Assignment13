@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 13 - The Bank Account Application</title>
+    <script src="js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <style>
+        .hide {display:none}
+        #bg {background: #fff; width: 50%; margin: auto; height: 300px;}
+        body {background: silver;}
+        h1 {text-align: center; background-color: rgba(192, 192, 240, 0.342);padding: 20px 0; border-bottom: solid 1px #999}
+        h4 {padding: 20px;}
+        h5 {padding-top: 35px;}
+    </style>
+</head>
+<body>
+    <div id="bg">
+
+        <h1>BANK</h1>
+        
+        <div id="screen1"class="text-center">
+            <h4>Existing Customer? Sign in below.</h4>
+            <button id="btn1" class="btn btn-primary btn-large text-center">Sign in</button>
+            <form action="" id="signin" class="hide">
+                <input type="text" id="customer" placeholder="Enter your name">
+                <input type="submit" value="Sign in" id="btn-signin" class="btn btn-primary">
+            </form>
+        </div>
+
+        <div id="screen2" class="text-center hide">
+            <h4>Welcome back, <span id="customerName"></span>!</h4>
+            $<input type="text" id="amount">
+            <button id="btn2" class="btn btn-success">Deposit</button>
+            <button id="btn3" class="btn btn-danger">Withdraw</button>
+            <h5>Your current balance is: $<span id="balance"></span></h5> 
+        </div>
+    </div>
+</body>
+</html>
